@@ -9,4 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
   hamburger.addEventListener("click", function () {
     menu.classList.toggle("show");
   });
+  const image = document.querySelector(".grid-item.one img");
+  image.classList.add("rotating");
 });
