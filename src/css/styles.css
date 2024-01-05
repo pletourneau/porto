@@ -1,1 +1,99 @@
+/* https://partnermarketinghub.withgoogle.com/brands/google-assistant/overview/color-palette-and-typography/ */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}
 
+header {
+  background: #9AA0A6;
+  color: #FFFFFF;
+  padding: 10px 0;
+  text-align: center;
+  height: 5vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  position: fixed;
+  right: 10px;
+}
+
+.menu.show {
+  display: flex; 
+}
+
+
+@media (min-width: 1024px) {
+  /* body {
+    background-color: lightblue;
+  } */
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* body {
+    background-color: lightgreen;
+  } */
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* body {
+    background-color: lightcoral;
+  } */
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .menu {
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+
+.menu li {
+    margin-top: 10px;
+}
+
+.menu.show {
+  display: flex; 
+}
+
+.hamburger {
+    display: block;
+}
+}
