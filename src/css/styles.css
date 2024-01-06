@@ -59,8 +59,13 @@ nav {
   height:100vh;
 }
 
-img {
+.two img {
   max-height: 35vh;
+}
+
+.three img {
+  max-height: 30vh;
+  opacity: 80%;
 }
 
 .grid-item {
@@ -71,18 +76,56 @@ img {
 
 .one {
   background-color: rgba(251, 188, 4, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
 }
+
+.one h2 {
+  font-size: 3.5rem;
+  
+} 
+
+.one p {
+  font-size: 1.5rem;
+  
+}
+
+
 
 .two {
   background-color: rgba(66, 133, 244, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .three {
   background-color:  rgba(234, 67, 53, 0.5);
+  color:#FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .four {
   background-color: rgba(52, 168, 83, 0.5);
+  color:#FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.three h2 {
+  position: absolute;
+  font-size: 3rem;
+  z-index: 10;
 }
 
 @keyframes rotateLeftRight {
