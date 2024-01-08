@@ -59,6 +59,13 @@ nav {
   height:100vh;
 }
 
+.one {
+  font-variant: small-caps;
+}
+
+/* .one h2 {
+  font-variant: small-caps;
+} */
 .two img {
   max-height: 35vh;
 }
@@ -75,12 +82,13 @@ nav {
 }
 
 .one {
-  background-color: rgba(251, 188, 4, 0.5);
+  /* background-color: rgba(251, 188, 4, 0.8); */
+  background-color: rgba(52, 168, 83, 0.9);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  
+  color: #FFFFFF;
 }
 
 .one h2 {
@@ -96,7 +104,8 @@ nav {
 
 
 .two {
-  background-color: rgba(66, 133, 244, 0.5);
+  /* background-color: rgba(66, 133, 244, 0.8); */
+  background-color: rgba(251, 188, 4, 0.9);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,7 +114,7 @@ nav {
 }
 
 .three {
-  background-color:  rgba(234, 67, 53, 0.5);
+  background-color:  rgba(234, 67, 53, 0.9);
   color:#FFFFFF;
   display: flex;
   flex-direction: column;
@@ -114,7 +123,9 @@ nav {
 }
 
 .four {
-  background-color: rgba(52, 168, 83, 0.5);
+  /* background-color: rgba(52, 168, 83, 0.8); */
+  /* background-color: rgba(251, 188, 4, 0.8); */
+  background-color: rgba(66, 133, 244, 0.9);
   color:#FFFFFF;
   display: flex;
   flex-direction: column;
@@ -123,6 +134,11 @@ nav {
 }
 
 .three h2 {
+  position: absolute;
+  font-size: 3rem;
+  z-index: 10;
+}
+.four h2 {
   position: absolute;
   font-size: 3rem;
   z-index: 10;
@@ -142,9 +158,6 @@ nav {
 }
 
 @media (min-width: 1024px) {
-  /* body {
-    background-color: lightblue;
-  } */
   .container {
     width: 80%;
     margin: auto;
@@ -152,18 +165,12 @@ nav {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* body {
-    background-color: lightgreen;
-  } */
   .container {
     width: 90%;
   }
 }
 
 @media (max-width: 767px) {
-  /* body {
-    background-color: lightcoral;
-  } */
   .container {
     width: 100%;
     padding: 0 15px;
