@@ -18,13 +18,13 @@ body {
 }
 
 .one img {
-   
-   display: inline-block;
+   display: inline-flexbox;
    margin-top: 50px;
     max-height: 5vh;
     min-height: 5vh;
     opacity: 30%;
-    
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .two img {
@@ -92,17 +92,17 @@ body {
 .one h2 {
   font-size: 3rem;
   z-index: 10;
-  margin-bottom: 10px;
-  z-index: 5;
+  margin-bottom: 20px;
+  z-index: 10;
 }
 .three h2 {
-  position: absolute;
+  /* position: absolute; */
   font-size: 3rem;
   z-index: 10;
   margin-bottom: 10px; 
 }
 .four h2 {
-  position: absolute;
+  /* position: absolute; */
   font-size: 3rem;
   z-index: 10;
   margin-bottom: 10px; 
