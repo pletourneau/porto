@@ -12,7 +12,7 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
+    <!-- <header>
       <nav>
         <div class="logo">put logo here</div>
         <button class="hamburger" id="hamburger">&#9776;</button>
@@ -23,11 +23,33 @@
           <li><a href="projects.html">Projects</a></li>
         </ul>
       </nav>
-    </header>
+    </header> -->
+    <nav id="icon-nav">
+      <ul>
+        <li>
+          <a href="index.html" title="Home"
+            ><img src="../home.svg" alt="Home"
+          /></a>
+        </li>
+        <li>
+          <a href="about.html" title="About Me"
+            ><img src="../about.svg" alt="About Me"
+          /></a>
+        </li>
+        <li>
+          <a href="projects.html" title="Projects"
+            ><img src="../projects.svg" alt="Projects"
+          /></a>
+        </li>
+      </ul>
+    </nav>
     <div class="grid-container">
       <div class="grid-item one">
-        <h2>Hi, I'm Paul!</h2>
-        <p>A Junior Developer and UXer</p>
+        <h2>HI, I'M PAUL!</h2>
+        <div class="row">
+          <img src="../github-mark.svg" alt="an icon for github" />
+          <img src="../linkedin-svgrepo-com.svg" alt="an icon for LinkedIn" />
+        </div>
       </div>
       <div class="grid-item two">
         <img
@@ -39,14 +61,20 @@
       <div class="grid-item three">
         <h2>PROJECTS</h2>
         <img
-          src="../VS-code.jpg"
-          alt="a picture of a VS code terminal"
+          src="../projects.svg"
+          alt="an icon of a chest of drawers"
           id="rotatingImage"
         />
       </div>
-      <div class="grid-item four"></div>
+      <div class="grid-item four">
+        <h2>ABOUT ME</h2>
+        <img
+          src="../about.svg"
+          alt="an icon of a human head with a question mark inside"
+          id="rotatingImage"
+        />
+      </div>
     </div>
-    <!-- <h1>TEST</h1> -->
     <script src="index.js"></script>
   </body>
 </html>
