@@ -83,7 +83,9 @@ body {
   height: auto;
   transition: transform 0.5s ease; /* Smooth transition for zoom effect */
 }
-
+.gifPage {
+  background-color:  rgba(234, 67, 53, 0.9);
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -276,38 +278,11 @@ ul {
   margin-bottom: 5px;
 }
 
-
-/* 
-.grid-item.two {
-  position: relative;
-  display: flex; 
-  justify-content: center;  
-  align-items: start; 
-}
-
-#aboutMe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex; 
-  justify-content: center; 
-  gap: 10px; 
-}
-
-#aboutMe img {
-  height: 10vh;
-  width: auto; 
-  animation: fallIn 1s ease forwards;
-}
-
-@keyframes fallIn {
-  from {
-    top: -100px; 
-    opacity: 0;
-  }
-  to {
-    top: 0;
+@media (max-width: 768px) { 
+  .overlay {
     opacity: 1;
+    visibility: visible;
+    position: static; 
+    padding: 10px; 
   }
-} */
+}
