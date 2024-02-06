@@ -30,7 +30,7 @@ body {
 .uno img {
   max-height: 10vh;
   min-height: 10vh;
-  background-color: rgba(154,160,166, 1);
+  background-color: rgba(154,160,166, .5);
 }
 
 .two img {
@@ -48,6 +48,11 @@ body {
   min-height: 20vh;
   opacity: 30%;
   order: 2;
+}
+
+.tres img {
+  max-height: 25vh;
+  min-height: 25vh;
 }
 
 .four img {
@@ -87,13 +92,15 @@ body {
   bottom: 0;
   background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
   color: white;
+  box-sizing: border-box;
+  padding:40px;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s ease;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Stack children vertically */
+  flex-direction: column; 
 }
 
 .port-item:hover .overlay {
@@ -147,6 +154,15 @@ body {
 }
 
 .three {
+  background-color:  rgba(234, 67, 53, 0.9);
+  color:#FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tres {
   background-color:  rgba(234, 67, 53, 0.9);
   color:#FFFFFF;
   display: flex;
