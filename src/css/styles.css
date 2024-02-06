@@ -64,9 +64,45 @@ body {
 }
 
 .port-item {
-  border: 1px solid #ccc;
-  padding: 20px;
-  text-align: center;
+  position: relative;
+  text-align: center; 
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.port-item img {
+  max-width: 100%; /* Ensure image is responsive and fits its container */
+  height: auto;
+  transition: transform 0.5s ease; /* Smooth transition for zoom effect */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack children vertically */
+}
+
+.port-item:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.port-item:hover img {
+  transform: scale(1.1); /* Optional: Slight zoom on hover */
 }
 
 
@@ -198,6 +234,7 @@ ul {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
   border-radius: 0 5px 5px 0;
+  z-index: 50;
 }
 
 #icon-nav ul {
